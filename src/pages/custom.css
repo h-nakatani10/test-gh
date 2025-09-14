@@ -1,0 +1,11 @@
+/* --- ファイルの末尾に追記 --- */
+
+/* index.jsでインラインで指定したスタイルをここに移動してもOKです */
+.card.styles-docCard-asdf { /* クラス名はよしなに変更してください */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .card.styles-docCard-asdf:hover { /* クラス名はよしなに変更してください */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
