@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import remarkPlantuml from 'remark-plantuml';
 
 const config: Config = {
   // サイトの基本情報
@@ -34,6 +35,7 @@ const config: Config = {
           // ★★★ 修正点2: "Edit this page"のリンク先をあなたのリポジトリに修正
           editUrl:
             'https://github.com/h-nakatani10/test-gh/tree/main/',
+          remarkPlugins: [remarkPlantuml],
         },
         // ★★★ 修正点3: ブログ機能は使わないので無効化
         blog: false,
