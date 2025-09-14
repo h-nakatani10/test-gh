@@ -81,6 +81,12 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
+          sidebarId: 'tutorialSidebar', // sidebars.tsで定義したID
+          position: 'left',
+          label: '各種仕様書', // ナビゲーションバーに表示するテキスト
+        },
+        {
+          type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Tutorial',
