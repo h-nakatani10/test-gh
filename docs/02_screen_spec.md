@@ -1,7 +1,5 @@
 #### **2. 画面仕様書 (docs/02_screen_spec.md)**
 Markdownのテーブル記法を使って、画面の項目などを定義します。
-
-```markdown
 ---
 sidebar_position: 2
 title: 画面仕様書

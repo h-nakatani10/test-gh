@@ -1,23 +1,19 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
-/**
- * このファイルでサイドバーの構造を定義します。
- */
 const sidebars: SidebarsConfig = {
-  // tutorialSidebarという名前のサイドバーを定義します
   tutorialSidebar: [
-    'intro', // docs/intro.md へのリンク
+    'intro',
     {
       type: 'category',
       label: '各種仕様書',
       items: [
-        '01_design',
-        '02_screen_spec',
-        '03_db_spec',
+        'design',        // ★修正: 「01_」を削除
+        'screen_spec',   // ★修正: 「02_」を削除
+        'db_spec',       // ★修正: 「03_」を削除
         {
           type: 'link',
           label: 'API仕様書 (HTML)',
-          href: '/test-gh/api/', // baseUrlを含むパス
+          href: '/test-gh/api/',
         },
       ],
     },
