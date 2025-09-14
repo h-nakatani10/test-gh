@@ -96,6 +96,15 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    plugins: [
+      [
+        '@docusaurus/plugin-client-redirects',
+        {
+          from: '/', // ルートURL (トップページ) へのアクセスを
+          to: '/docs/intro', // 最初のドキュメントページにリダイレクト
+        },
+      ],
+    ],
   } satisfies Preset.ThemeConfig,
 };
 
